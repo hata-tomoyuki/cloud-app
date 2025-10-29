@@ -1,0 +1,102 @@
+.home {
+  display: grid;
+  grid-template-rows: 562px 270px auto;
+  min-height: 100vh;
+  width: 1280px; /* Figma frame width */
+  margin: 0 auto;
+  position: relative;
+  background: #ffffff;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 562px;
+  overflow: hidden;
+}
+
+.hero__image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.25);
+  z-index: 1;
+}
+
+.banner {
+  position: relative;
+  height: 270px;
+  background: #ffffcf;
+}
+
+.banner__title {
+  color: #333333;
+  font-family: 'Noto Sans JP', 'Noto Sans CJK JP', system-ui, -apple-system, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.45;
+  text-align: center;
+  position: absolute;
+  left: 198px; /* x */
+  top: 34px;  /* y within banner */
+  width: 885px;
+  margin: 0;
+}
+
+.actions {
+  position: absolute;
+  inset: 0;
+}
+
+.action {
+  position: absolute;
+  border: 3px solid #333333;
+  border-radius: 20px;
+  box-sizing: border-box;
+  width: 468.83px;
+  height: 89.26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 153.83px; /* text x offset */
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Noto Sans JP', 'Noto Sans CJK JP', system-ui, -apple-system, sans-serif;
+}
+
+.action--start {
+  left: 132px;
+  top: 135px;
+  background: #e85057;
+}
+
+.action--zukan {
+  left: 680.17px;
+  top: 135px;
+  background: #50a9e8;
+}
+
+.badge {
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2; /* above overlay */
+}
+
+.badge__image {
+  width: 418px;
+  height: 418px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px #333333 inset; /* 6pxのストローク */
+}

@@ -1,0 +1,204 @@
+.zukan {
+  width: 1143px;
+  min-height: 1248px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.zukan__bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 188, 255, 1) 0%, rgba(116, 212, 255, 1) 100%);
+  z-index: 0;
+}
+
+.zukan__panel {
+  position: relative;
+  width: 896px;
+  min-height: 1248px;
+  margin: 0 auto;
+  z-index: 1;
+  padding-top: 32px;
+}
+
+.zukan__header-image {
+  width: 248px;
+  height: 248px;
+  margin-left: 324px; /* x */
+  box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.1), 0px 10px 15px -3px rgba(0,0,0,0.1);
+  border: 4px solid #1E2939;
+  border-radius: 24px;
+  background: #fff;
+  padding: 28px 28px 4px;
+  box-sizing: border-box;
+}
+
+.zukan__header-image img {
+  width: 100%;
+  height: 192px;
+  object-fit: contain;
+  display: block;
+}
+
+.zukan__head {
+  position: relative;
+  width: 864px;
+  height: 176px;
+  margin-left: 16px; /* panel padding-left */
+  margin-top: 32px;
+  background: #FEF9C2;
+  border: 3px solid #1E2939;
+  border-radius: 24px;
+  box-shadow: 0px 8px 10px -6px rgba(0,0,0,0.1), 0px 20px 25px -5px rgba(0,0,0,0.1);
+}
+
+.zukan__title {
+  position: absolute;
+  left: 36px;
+  top: 36px;
+  width: 792px;
+  height: 36px;
+  margin: 0;
+  color: #155DFC;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.293%;
+  text-align: center;
+}
+
+.zukan__stats {
+  position: absolute;
+  left: 301.7px;
+  top: 88px; /* 52 + 36 */
+  width: 188.59px;
+  height: 62px;
+  background: #fff;
+  border: 3px solid #1E2939;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.zukan__stats-label,
+.zukan__stats-total {
+  color: #1E2939;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -1.953%;
+}
+
+.zukan__stats-num {
+  color: #FB2C36;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.zukan__grid {
+  position: relative;
+  margin-left: 52px; /* 36 + 16 */
+  margin-top: 182px; /* from head y 182 */
+  width: 864px;
+  display: grid;
+  grid-template-columns: repeat(4, 186px);
+  grid-auto-rows: 186px;
+  gap: 16px;
+}
+
+.cloud-card {
+  position: relative;
+  background: #fff;
+  border: 3px solid #1E2939;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px -2px rgba(0,0,0,0.1), 0px 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.cloud-card--unknown {
+  background: #D1D5DC;
+}
+
+.cloud-card__emoji {
+  position: absolute;
+  left: 63px;
+  top: 37px;
+  width: 60px;
+  height: 60px;
+  font-size: 60px;
+  line-height: 60px;
+  color: #0A0A0A;
+}
+
+.cloud-card__title {
+  position: absolute;
+  left: 61px;
+  top: 105px;
+  width: 64px;
+  height: 24px;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #155DFC;
+  text-align: center;
+}
+
+.cloud-card__desc {
+  position: absolute;
+  left: 19px;
+  top: 133px;
+  width: 148px;
+  height: 32px;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.3333;
+  color: #4A5565;
+  text-align: center;
+}
+
+.cloud-card__pill {
+  position: absolute;
+  left: 127.55px;
+  top: 11px;
+  width: 47.45px;
+  height: 28px;
+  border: 2px solid #1E2939;
+  border-radius: 9999px;
+  display: grid;
+  place-items: center;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+  line-height: 1.3333;
+}
+
+.cloud-card__pill--get {
+  background: #00C950;
+  color: #fff;
+}
+
+.cloud-card__pill--miss {
+  background: #FB2C36;
+  color: #fff;
+}
+
+.zukan__back {
+  position: absolute;
+  left: 16px; /* panel left */
+  top: 804px;
+  width: 152px;
+  height: 64px;
+  background: #51A2FF;
+  border: 3px solid #1E2939;
+  border-radius: 16px;
+  box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.1), 0px 10px 15px -3px rgba(0,0,0,0.1);
+  color: #fff;
+  font-family: Inter, system-ui, -apple-system, 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+}
